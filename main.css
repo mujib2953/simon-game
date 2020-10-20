@@ -1,0 +1,50 @@
+body {
+    height: 100vh;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+}
+
+.hints {
+    height: 50vh;
+    width: 100%;
+}
+
+.buttons {
+    height: 50vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+.buttons a {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    display: block;
+}
+
+.buttons a:hover:not(.disabled) {
+    opacity: 0.75;
+}
+
+.top-left-btn {
+    top: 0;
+    left: 0;
+    background-color: #ffceda;
+}
+.top-right-btn {
+    top: 0;
+    right: 0;
+    background-color: #90e3ff;
+}
+
+.btm-left-btn {
+    bottom: 0;
+    left: 0;
+    background-color: #ccc55f;
+}
+
+.btm-right-btn {
+    bottom: 0;
+    right: 0;
+    background-color: #b2b195;
+}
