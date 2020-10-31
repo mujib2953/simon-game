@@ -12,9 +12,14 @@
     <meta name="description" content="Memory Game, user has to remember and recreated the given audio sequence">
     <meta name="keywords" content="Simon Game">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
     <link href="css/main.css" type="text/css" rel="stylesheet">
+
+    <!-- favicons -->
+    <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
 </head>
 
 <body>
@@ -28,13 +33,19 @@
                 Step
                 <span id="step-count">1</span>
             </h2>
+            <h3>Good luck!</h3>
         </div>
         <div class="settings box">
-            <div class="toggle-container">
-                <input type="checkbox" />
-                <div class="slider round"></div>
+            <div>
+                <div class="toggle-container">
+                    <input type="checkbox" />
+                    <div class="slider round"></div>
+                </div>
+                Strict Mode
             </div>
-            Strict Mode
+            <button class="btn">
+                <i class="fa fa-refresh"></i> Reset
+            </button>
         </div>
     </section>
     <section class="sections">

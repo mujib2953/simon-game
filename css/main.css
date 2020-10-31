@@ -23,7 +23,7 @@ body {
 }
 
 h1, h2, h3 {
-    margin: 0;
+    margin: 20px 0 10px 0;
     padding: 0;
     font-weight: 500;
     line-height: 1.1;
@@ -51,6 +51,38 @@ h1, h2, h3 {
     opacity: 0.9;
 }
 
+.sections div:not(.disabled).active {
+    /* opacity: 0.85; */
+    /* border: 0.5px solid red; */
+    /* background-color: #EEE; */
+    -webkit-animation: flash linear 500ms;
+    animation: flash linear 500ms;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .sections div.disabled {
     cursor: default;
 }
@@ -68,7 +100,8 @@ h1, h2, h3 {
 }
 
 .btm-right-btn {
-    background-color: #b2b195;
+    /* background-color: #b2b195; */
+    background-color: #bcea95;
 }
 
 .box {
@@ -109,6 +142,47 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.info {
+    flex-direction: column;
+}
+
+.info h2 {
+    font-size: 30px;
+}
+
+.info h3 {
+    font-size: 24px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.settings div {
+    display: flex;
+    align-items: center;
+}
+
+.settings button {
+    padding: 10px 16px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3333333;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: inherit;
+    outline: none;
+}
+
+.settings button:hover {
+    border-color: #000;
 }
 
 .toggle-container {
@@ -186,6 +260,7 @@ h1, h2, h3 {
 }
 
 /* media queries */
+
 @media only screen and (min-width: 1024px) {
     .hints {
         position: absolute;
@@ -224,7 +299,6 @@ h1, h2, h3 {
     .sections .btm-right-btn {
         border-radius: 0 0 10px;
     }
-
     .start button {
         background-color: #ffed91;
         color: #000;
@@ -232,6 +306,9 @@ h1, h2, h3 {
     .start button:hover {
         background-color: #f9ffd0;
         color: #000;
+    }
+    .info {
+        border-radius: 10px 10px 0 0;
     }
 }
 
@@ -246,7 +323,6 @@ h1, h2, h3 {
     }
     .start {
         background-color: #cc5f79;
-
         display: flex;
         align-items: center;
         flex-direction: column;
