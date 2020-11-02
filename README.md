@@ -3,7 +3,7 @@
 
  _credits: Inspired from [freeCodeCamp](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) youtube channel_
 
- ![simon-game](https://github.com/mujib2953/simon-game/tree/main/images/simon-game.PNG)
+ ![simon-game](https://github.com/mujib2953/simon-game/blob/main/images/simon-game.PNG)
 
 ### Highlights
 - It is a simple memory game.
